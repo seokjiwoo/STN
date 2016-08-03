@@ -1,0 +1,104 @@
+<!--[if IE 7]><html class="ie7" lang="ko"><![endif]-->
+<!--[if IE 8]><html class="ie8" lang="ko"><![endif]-->
+<!--[if IE 9]><html class="ie9" lang="ko"><![endif]-->
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<title></title>
+	<link rel="stylesheet" href="./common/css/common.css" />
+	<script type="text/javascript" src="./common/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="./common/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="./common/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="./common/js/script.js"></script>
+	<!--[if lt IE 9]>
+		<script src="./js/trunk/html5shiv.js"></script>
+		<script src="./js/respond.min.js"></script>
+	<![endif]-->
+	<style>
+		.styleTab{width:800px;overflow:hidden;}
+		.styleTab li{width:20%;float:left;}
+		.styleTab li a{height:30px;line-height:30px;display:block;text-align:center;background:#ccc;}
+		.styleTab li.on a{background:orange;font-weight:bold;color:#fff;}
+		.styleContents > div{display:none;padding:20px;}
+		.styleContents > div.on{display:block;}
+	</style>
+</head>
+<body>
+	<ul class="styleTab">
+		<li class="on"><a href="#">Icon &amp; Bullet</a></li>
+		<li><a href="#">Button</a></li>
+		<li><a href="#">Form</a></li>
+		<li><a href="#">Table</a></li>
+		<li><a href="#">Etc</a></li>
+	</ul>
+	
+	<div class="styleContents">
+		<!-- Icon & Bullet -->
+		<div class="stCon">1</div> 
+		<!-- // Icon & Bullet -->
+
+		<!-- Buttont -->
+		<div class="stCon">2</div>
+		<!-- // Button -->
+
+		<!-- Form -->
+		<div class="stCon on">
+			<input type="text" class="w94" />
+			<input type="password" class="w94" />
+			<span class="select">
+				<select class="w90">
+					<option>010</option>
+					<option>011</option>
+					<option>016</option>
+				</select>
+			</span>
+			<textarea></textarea>
+			<button class="btn"><span class="last-child"></span>버튼</button>
+			<a href="#" class="btn"><span class="last-child"></span>버튼</a>
+		</div>
+		<!-- // Form -->
+
+		<!-- Table -->
+		<div class="stCon">4</div>
+		<!-- // Table -->
+
+		<!-- Etc -->
+		<div class="stCon">5</div>
+		<!-- // Etc -->
+	</div>
+
+	<script>
+		(function($) {
+			$.fn.styleTab = function( option ) {
+				var defaults ={
+					menu : '.styleTab li',
+					styleContents : '.styleContents .stCon'
+				},
+				o = $.extend({}, defaults, option),
+				action = {
+					bindEvent : function() {
+						$("body").on("click", o.menu, this.bindClick);
+					},
+					bindClick : function(e) {
+						e.preventDefault();
+						var i = $(this).index();
+						$(o.menu).removeClass("on");
+						$(o.menu).eq(i).addClass("on");
+						$(o.styleContents).removeClass("on");
+						$(o.styleContents).eq(i).addClass("on");
+					}
+				}
+				action.bindEvent();
+			};
+		})(jQuery);
+
+		$(document).ready(function(){
+			$('.styleTab li').styleTab();
+		});
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>STN</title>
+    <style type="text/css">
+		body {margin:0 0 0 20px; font-size:14px}
+		div.sports { /*width:300px; */margin:30px 0 0 0; float:left}
+		div.sports h1 {font-weight:bold; font-size:18px; color:#e51937}
+		div.sports h2 {font-weight:bold; font-size:20px; color:#0056a4; text-transform:uppercase; }
+		div.sports ul.ta {margin:30px 100px 30px 0; padding:0; float: left; }
+		div.sports ul.ta li {padding:5px 0 0 0; list-style:none;}
+		div.sports ul.ta li span.red {padding:0 0 0 20px; color:#d3262a}
+		div.sports ul.ta li span.blue {display:block; color:#007ac3}
+		div.sports ul.ta li a {text-decoration:none; color:#666; line-height:25px}
+		div.sports ul.ta li a:hover {color:#333}
+		div.sports ul.ta li.tit {font-weight:bold; color:#000; font-size:18px}
+		div.sports ul.ta li.tit2 {font-weight:bold; color:#ff5566; font-size:16px; padding-top:25px;}
+	</style>
+	<script type="text/javascript" src="./common/js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+
+<div class="sports">
+	<ul class="ta">
+		<li><a href="/main/master1.html">master1(html)</a><span class="red">ok</span></li>
+		<li><a href="/main/master2.html">master2(html)</a><span class="red">ok</span></li>
+		<li><a href="/main/main.php">main</a><span class="red">ok</span></li>
+		<li><a href="/main/onair.php">onair_popup(popup size_900*600)</a><span class="red">ok</span></li>
+	</ul>
+
+	<ul class="ta">
+		<li class="tit">프로그램</li>
+		<li><a href="/stn/program.php">프로그램</a><span class="red">ok</span></li>
+	</ul>
+	
+	<ul class="ta">
+		<li class="tit">편성표</li>
+		<li><a href="/schedule/schedule.php">편성표</a><span class="red">ok</span></li>
+		<li><a href="/schedule/channel_guide.php">채널번호안내</a><span class="red">ok</span></li>
+		<li><a href="/schedule/notice_list.php">편성공지_list</a><span class="red">ok</span></li>
+		<li><a href="/schedule/notice_view.php">편성공지_view</a><span class="red">ok</span></li>
+		<li><a href="/schedule/cueton.php">큐톤<!-- 준비중페이지 일단 대체 --></a><span class="red">준비중</span></li>
+	</ul>
+	
+	<ul class="ta">
+		<li class="tit">다시보기</li>
+		<li><a href="/stn/vod_list.php">다시보기_list</a><span class="red">ok</span></li>
+		<li><a href="/stn/vod_view.php">다시보기_view</a><span class="red">ok</span></li>
+	</ul>
+	
+	<ul class="ta">
+		<li class="tit">뉴스</li>
+		<li><a href="/stn/news_list.php">뉴스_list</a><span class="red">ok</span></li>
+		<li><a href="/stn/news_view.php">뉴스_view</a><span class="red">ok</span></li>
+	</ul>
+	
+	<ul class="ta">
+		<li class="tit">시청자참여</li>
+		<li><a href="/community/notice_list.php">공지사항_list</a><span class="red">ok</span></li>
+		<li><a href="/community/notice_view.php">공지사항_view</a><span class="red">ok</span></li>
+		<li><a href="/community/freeboard_list.php">시청자게시판_list</a><span class="red">ok</span></li>
+		<li><a href="/community/freeboard_view.php">시청자게시판_view</a><span class="red">ok</span></li>
+		<li><a href="/community/freeboard_write.php">시청자게시판_write</a><span class="red">ok</span></li>
+		<li><a href="/community/event_list.php">이벤트_list</a><span class="red">ok</span></li>
+		<li><a href="/community/event_view.php">이벤트_view</a><span class="red">ok</span></li>
+	</ul>
+	
+	<ul class="ta">
+		<li class="tit">회사소개</li>
+		<li><a href="/company/greetings.php">회사개요</a></li>
+		<li><a href="/company/greetings.php">-- ceo인사말</a><span class="red">ok</span></li>
+		<li><a href="/company/business_goal.php">-- 사업목표</a><span class="red">ok</span></li>
+		<li><a href="/company/history.php">-- 회사연혁</a><span class="red">ok</span></li>
+		<li><a href="/company/major_result.php">-- 주요실적</a><span class="red">ok</span></li>
+		<li><a href="/company/organization.php">-- 조직도</a><span class="red">ok</span></li>
+		<li><a href="/company/location.php">-- 위치</a><span class="red">ok</span></li>
+		<li><a href="/company/ci.php">-- ci소개</a><span class="red">ok</span></li>
+		<li><a href="/company/pr_vod.php">-- 홍보영상<!-- 준비중페이지 일단 대체 --></a><span class="red">준비중</span></li>
+
+		<li><a href="/company/business_field.php">사업영역</a></li>
+		<li><a href="/company/business_field.php">-- 스포츠채널</a><span class="red">ok</span></li>
+		<li><a href="/company/business_field02.php">-- 스포츠중계방송</a><span class="red">ok</span></li>
+		<li><a href="/company/business_field03.php">-- 스포츠마케팅</a><span class="red">ok</span></li>
+		<li><a href="/company/business_field04.php">-- 스포츠언론사</a><span class="red">ok</span></li>
+		<li><a href="/company/business_field05.php">-- 스포츠it</a><span class="red">ok</span></li>
+		
+		<li><a href="/company/ad_guide.php">광고안내<!-- 준비중페이지 일단 대체 --></a><span class="red">준비중</span></li>
+		
+		<li><a href="/company/recruit_guide.php">인재채용</a><span class="red">ok</span></li>
+		<li><a href="/company/recruit_guide.php">-- 채용안내</a><span class="red">ok</span></li>
+		<li><a href="/company/recruit_system.php">-- 인사제도</a><span class="red">ok</span></li>
+		<li><a href="/company/recruit_apply.php">-- 입사지원</a><span class="red">ok</span></li>
+		<li><a href="/company/recruit_result.php">-- 전형결과확인</a><span class="red">준비중</span></li>
+		<li><a href="/company/recruit_notice_list.php">-- 채용공지_list</a><span class="red">ok</span></li>
+		<li><a href="/company/recruit_notice_view.php">-- 채용공지_view</a><span class="red">ok</span></li>
+		
+		<li><a href="/company/watch_guide.php">시청안내</a></li>
+	</ul>
+	
+	<ul class="ta">
+		<li class="tit">멤버쉽</li>
+		<li><a href="/member/login.php">로그인</a><span class="red">ok</span></li>
+		<li><a href="/member/mem_join.php">회원가입</a><span class="red">ok</span></li>
+		<li><a href="/member/pop_id_check.php">아이디중복확인 팝업<br/>(size 450*420)</a><span class="red">ok</span></li>
+		<li><a href="/member/pop_email_check.php">이메일중복확인 팝업<br/>(size 450*450)</a><span class="red">ok</span></li>
+		<!-- <li><a href="/member/mailing_pw_result.html">메일링_비밀번호찾기</a><span class="red">ok</span></li>
+		<li><a href="/member/mailing_email_confirm.html">메일링_이메일인증</a><span class="red">ok</span></li> -->
+		<li><a href="/member/mailing_pw_result_css.html">메일링_비밀번호찾기</a><span class="red">ok</span></li>
+		<li><a href="/member/mailing_email_confirm_css.html">메일링_이메일인증</a><span class="red">ok</span></li>
+		<li><a href="/member/mem_join_ok.php">회원가입완료</a><span class="red">ok</span></li>
+		<li><a href="/member/search_id_pw.php">ID_PW 찾기</a><span class="red">ok</span></li>
+		<li><a href="/member/mem_change.php">회원정보수정</a><span class="red">ok</span></li>
+		<li><a href="/member/mem_leave.php">회원탈퇴</a><span class="red">ok</span></li>
+		<li><a href="/member/mem_leave_ok.php">회원탈퇴완료</a><span class="red">ok</span></li>
+	</ul>
+
+	<ul class="ta">
+		<li class="tit">ETC</li>
+		<li><a href="/etc/sitemap.php">사이트맵</a><span class="red">ok</span></li>
+		<li><a href="/etc/access_terms.php">이용약관</a><span class="red">ok</span></li>
+		<li><a href="/etc/personal_data.php">개인정보취급방침</a><span class="red">ok</span></li>
+		<li><a href="/etc/email_notcollect.php">이메일무단수집거부</a><span class="red">ok</span></li>
+	</ul>
+</div>
+      <script>
+    	$(document).ready(function(){
+    		$(".sports a").each(function(i){
+    			var tg = $(this);
+    			tg.attr("target","_blank");
+    		});
+    	});
+    </script>
+</body>
+</html>
